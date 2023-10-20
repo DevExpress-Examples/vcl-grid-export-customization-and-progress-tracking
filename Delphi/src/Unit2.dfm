@@ -2,22 +2,25 @@ object Form2: TForm2
   Left = 0
   Top = 0
   Caption = 'Form2'
-  ClientHeight = 479
-  ClientWidth = 719
+  ClientHeight = 719
+  ClientWidth = 1079
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -11
+  Font.Height = -17
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
-  PixelsPerInch = 96
-  TextHeight = 13
+  PixelsPerInch = 144
+  TextHeight = 21
   object cxGrid1: TcxGrid
-    Left = 6
-    Top = 8
-    Width = 705
-    Height = 377
+    Left = 9
+    Top = 12
+    Width = 1058
+    Height = 566
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
     TabOrder = 0
     object cxGrid1DBTableView1: TcxGridDBTableView
       Navigator.Buttons.CustomButtons = <>
@@ -42,46 +45,66 @@ object Form2: TForm2
       DataController.Summary.DefaultGroupSummaryItems = <>
       DataController.Summary.FooterSummaryItems = <>
       DataController.Summary.SummaryGroups = <>
+      FilterRow.SeparatorWidth = 9
+      FixedDataRows.SeparatorWidth = 9
+      NewItemRow.SeparatorWidth = 9
+      OptionsView.NavigatorOffset = 75
+      OptionsView.FixedColumnSeparatorWidth = 3
+      Preview.LeftIndent = 30
+      Preview.RightIndent = 8
+      RowLayout.MinValueWidth = 120
       object cxGrid1DBTableView1RecId: TcxGridDBColumn
         DataBinding.FieldName = 'RecId'
         Visible = False
+        MinWidth = 30
       end
       object cxGrid1DBTableView1CustNo: TcxGridDBColumn
         DataBinding.FieldName = 'CustNo'
+        MinWidth = 30
       end
       object cxGrid1DBTableView1Company: TcxGridDBColumn
         DataBinding.FieldName = 'Company'
-        Width = 147
+        MinWidth = 30
+        Width = 221
       end
       object cxGrid1DBTableView1Addr1: TcxGridDBColumn
         DataBinding.FieldName = 'Addr1'
+        MinWidth = 30
       end
       object cxGrid1DBTableView1City: TcxGridDBColumn
         DataBinding.FieldName = 'City'
+        MinWidth = 30
       end
       object cxGrid1DBTableView1State: TcxGridDBColumn
         DataBinding.FieldName = 'State'
-        Width = 58
+        MinWidth = 30
+        Width = 87
       end
       object cxGrid1DBTableView1Zip: TcxGridDBColumn
         DataBinding.FieldName = 'Zip'
+        MinWidth = 30
       end
       object cxGrid1DBTableView1Country: TcxGridDBColumn
         DataBinding.FieldName = 'Country'
         Visible = False
         GroupIndex = 0
+        MinWidth = 30
       end
       object cxGrid1DBTableView1Phone: TcxGridDBColumn
         DataBinding.FieldName = 'Phone'
+        MinWidth = 30
       end
       object cxGrid1DBTableView1FAX: TcxGridDBColumn
         DataBinding.FieldName = 'FAX'
+        MinWidth = 30
       end
       object cxGrid1DBTableView1Contact: TcxGridDBColumn
         DataBinding.FieldName = 'Contact'
+        MinWidth = 30
       end
       object cxGrid1DBTableView1LastInvoiceDate: TcxGridDBColumn
         DataBinding.FieldName = 'LastInvoiceDate'
+        MinWidth = 30
       end
     end
     object cxGrid1Level1: TcxGridLevel
@@ -89,27 +112,29 @@ object Form2: TForm2
     end
   end
   object cxButton1: TcxButton
-    Left = 8
-    Top = 391
-    Width = 161
-    Height = 21
+    Left = 12
+    Top = 587
+    Width = 242
+    Height = 31
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
     Caption = 'Export to XLSX'
+    OptionsImage.Spacing = 6
     TabOrder = 1
     OnClick = cxButton1Click
   end
   object cxProgressBar1: TcxProgressBar
-    Left = 175
-    Top = 391
+    Left = 263
+    Top = 587
+    Margins.Left = 5
+    Margins.Top = 5
+    Margins.Right = 5
+    Margins.Bottom = 5
+    Properties.PeakSize = 3
     TabOrder = 2
-    Width = 536
-  end
-  object Button1: TButton
-    Left = 40
-    Top = 446
-    Width = 75
-    Height = 25
-    Caption = 'Button1'
-    TabOrder = 3
+    Width = 804
   end
   object DataSource1: TDataSource
     DataSet = dxMemData1

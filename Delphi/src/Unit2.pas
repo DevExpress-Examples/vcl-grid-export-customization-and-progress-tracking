@@ -45,7 +45,6 @@ type
     cxGrid1DBTableView1LastInvoiceDate: TcxGridDBColumn;
     cxButton1: TcxButton;
     cxProgressBar1: TcxProgressBar;
-    Button1: TButton;
     procedure cxButton1Click(Sender: TObject);
     procedure OnBeforeSave(Sender: TdxSpreadSheet);
     procedure OnProgress(Sender: TObject; Percent: Integer);
